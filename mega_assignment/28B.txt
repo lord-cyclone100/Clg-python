@@ -1,0 +1,12 @@
+January : 450
+February : 510
+March : 525
+April : 680
+May : 725
+June : 800
+July : 520
+August : 600
+September : 510
+October : 570
+November : 550
+December : 500
