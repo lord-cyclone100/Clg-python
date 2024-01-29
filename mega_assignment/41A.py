@@ -1,7 +1,6 @@
 '''Create a matrix randomly then sort it with respect to 2 nd row.'''
 
 import numpy as np
-
 def sort_2nd_row(arr):
     l = arr[1]
     l.sort()
