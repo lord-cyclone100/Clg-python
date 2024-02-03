@@ -25,7 +25,7 @@ def checkugly():
 
 def main():
     x=checkugly()   
-    if x==0:
+    if x==0 or n==1:
         print(n,"is ugly") 
     else:
         print(n,"is not ugly")  
