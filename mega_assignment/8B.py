@@ -4,19 +4,23 @@
 #2 5 7 15 12 q
 #Average = 8.2
 
-def calc_avg():
-    on = 1
-    avg_list = []
-    while (on):
-        n = input("Enter any number of q to find average:")
-        if (n != 'q'):
-            avg_list.append(int(n))
-        elif(n == 'q'):
-            if(len(avg_list)!=0):
-                print(f"Average = {sum(avg_list)/len(avg_list)}")
-            elif(len(avg_list)==0):
-                print(f"Average = 0")
-            on = 0
+def avg(my_list):
+    if (len(my_list) == 0):
+        print("Average is 0")
+    else:
+        print(f"Average is {sum(my_list) / len(my_list)}")
 
-calc_avg()
+
+my_list = []
+on = 1
+while (on):
+    n = input("Enter a number or press 'q' to stop:")
+    if (n.lower() == 'q'):
+        on = 0
+    elif (n <= '0' or n >= '9'):
+        print("Please enter a valid entry")
+    else:
+        my_list.append(int(n))
+
+avg(my_list)
 
