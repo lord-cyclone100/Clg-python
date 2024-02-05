@@ -1,5 +1,5 @@
-'''Store 5 students marks for 6 subjects(randomly) then increments 5 marks for each
-student for each subject then return Final Marks.'''
+'''Store 5 students marks for 6 subjects(randomly) and return average marks of each subject
+and topper student.'''
 
 import random
 
