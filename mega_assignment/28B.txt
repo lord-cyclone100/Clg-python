@@ -1,12 +1,4 @@
-January : 450
-February : 510
-March : 525
-April : 680
-May : 725
-June : 800
-July : 520
-August : 600
-September : 510
-October : 570
-November : 550
-December : 500
+Name,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
+Customer-1,100,110,105,115,120,125,130,135,140,145,150,155
+Customer-2,90,95,100,105,110,115,120,125,130,135,140,145
+Customer-3,80,85,90,95,100,105,110,115,120,125,130,135
