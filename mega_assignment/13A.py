@@ -6,16 +6,23 @@ return Empty String.
 Input-aabbccdd, output-abd,
 Input- abba output-empty string.'''
 
-def reduce_str(str):
-    test_str = ''
-    for i in range(0,len(str),2):
-        if str[i] == str[i+1]:
-            test_str += str[i]
-    if test_str == '':
-        print("Empty String")
-    else:
-        print(test_str)
+def reduce_string(s):
+    stack = []
+    for char in s:
+        if stack and stack[-1] == char:
+            stack.pop()
+        else:
+            stack.append(char)
 
+    result = ''.join(stack)
+    return result if result else "Empty String"
 
-str = input("Enter a string:")
-reduce_str(str)
+# Example usage:
+input_str_1 = "aabbccdd"
+output_1 = reduce_string(input_str_1)
+print(f"Input: {input_str_1}, Output: {output_1}")
+
+input_str_2 = "baab"
+output_2 = reduce_string(input_str_2)
+print(f"Input: {input_str_2}, Output: {output_2}")
+
